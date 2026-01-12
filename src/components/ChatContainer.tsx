@@ -7,7 +7,6 @@ import { useChatApi } from "../hooks/useChatApi";
 export default function ChatContainer() {
   const { sessionId, context } = useChatSession();
   const { messages, sendMessage, typing } = useChatApi(sessionId, context);
-  console.log(sessionId)
 
   return (
     <div className="w-full h-full bg-white rounded-xl flex flex-col overflow-hidden">
